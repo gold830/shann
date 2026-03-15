@@ -202,6 +202,7 @@ header {
 /* Hero Section */
 
 .hero {
+    width: 100vw;
     height: 100vh;
     background-image:linear-gradient(rgba(71, 0, 0, 0.235),rgba(78, 78, 0, 0.212),rgba(0, 67, 0, 0.249)), url(pics/ShanHero.JPG.jpeg);
     background-size: cover;
