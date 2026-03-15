@@ -13,12 +13,13 @@
 
 body {
     background-image: linear-gradient(#0d1b1eb5, #0d1b1eb5), url(pics/Background.jpeg); /* Specify the path to your image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center;  /* Centers the image on the page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image on the page */
     background-attachment: fixed; /* Fixes the image position so it doesn't scroll */
     background-size: cover;       /* Scales the image to cover the entire viewport */
     background-color: #cccccc;    /* Fallback color if the image cannot load */
     width: 100%;
+    height: 100vh;
     
 }
 
