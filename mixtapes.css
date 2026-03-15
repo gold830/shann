@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: url(pics/Background.jpeg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Bar */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #0D1B1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+.navlogo h1 {
+    font: 16px;
+    font-weight: 900;
+    color: #B2FFA9;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #B2FFA9;
+    border: 1px solid #B2FFA9;
+    font-size: 16px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+    color: #0D1B1E;
+    background-color: #B2FFA9;
+    border: 1px solid #B2FFA9;
+}
+
+.navbar ul li .active {
+    color: #0D1B1E;
+    background-color: #B2FFA9;
+    border: 1px solid #B2FFA9;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #B2FFA9;
+        margin: 6px 0;
+    }
+
+    .navbar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #0D1B1E;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .navbar.active {
+        height: 450px;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul{
+        opacity: 1;
+    }
+
+    .navbar ul a {
+        margin-bottom: 12px;
+    }
+}
+
+/* Nav Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Video Cards Section */
+
+.youtubesection {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.youtubesection h2 {
+    font-size: 25px;
+    font-family: "Lobster Two", sans-serif;
+    color: #B2FFA9;
+    margin-bottom: 30px;
+}
+
+.youtubesection h2::after {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: #B2FFA9;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.youtubesection .youtubecardcontainers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.youtubesection .youtubecardcontainers .youtubecard {
+    width: 325px;
+    height: 280px;
+    background-color: #B2FFA9;
+    border: 2px solid #B2FFA9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #B2FFA9;
+    overflow: hidden;
+    text-align: center;
+}
+
+.youtubesection .youtubecardcontainers .youtubecard .cardcontent h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.youtubesection .youtubecardcontainers .youtubecard .cardcontent span {
+    font-weight: 800;
+}
+
+/* Video Cards Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footercontainer {
+    color: #B2FFA9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footercontainer .footerflexrow {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footercontainer .footerflexrow li {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.footercontainer .footerflexrow li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #B2FFA9;
+}
+
+.footercontainer .footerflexrow li i {
+    color: #B2FFA9;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #B2FFA9;
+    margin: 0 5px;
+}
+
+.footercontainer .footerflexrow li i:hover {
+    color: #0D1B1E;
+    transition: 1s ease;
+    transform: rotate(360deg);
+    background-color: #B2FFA9;
+    cursor: pointer;
+}
+
+.footercontainer p {
+    text-align: center;
+    background-color: #B2FFA9;
+    color: #0D1B1E;
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+/* Footer Section */
