@@ -12,8 +12,7 @@
 }
 
 body {
-    
-    background-color: #0D1B1E;
+    background-color: #2C4219;
 }
 
 
@@ -36,7 +35,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #0D1B1E;
+    background-color: #2C4219;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +48,7 @@ header {
 .navlogo h1 {
     font: 16px;
     font-weight: 900;
-    color: #B2FFA9;
+    color: #fde64e;
 }
 
 .hamburger {
@@ -62,9 +61,10 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #B2FFA9;
-    border: 1px solid #B2FFA9;
+    color: #fde64e;
+    border: 1px solid #fde64e;
     font-size: 16px;
+    font-weight: 700;
     padding: 5px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -72,15 +72,15 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #0D1B1E;
-    background-color: #B2FFA9;
-    border: 1px solid #B2FFA9;
+    color: #2C4219;
+    background-color: #fde64e;
+    border: 1px solid #fde64e;
 }
 
 .navbar ul li .active {
-    color: #0D1B1E;
-    background-color: #B2FFA9;
-    border: 1px solid #B2FFA9;
+    color: #2C4219;
+    background-color: #fde64e;
+    border: 1px solid #fde64e;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -104,7 +104,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #B2FFA9;
+        background-color: #fde64e;
         margin: 6px 0;
     }
 
@@ -115,7 +115,7 @@ header {
         right: 0;
         right: 0;
         width: 100vw;
-        background-color: #0D1B1E;
+        background-color: #2C4219;
         transition: 0.2s;
         overflow: hidden;
         z-index: 999;
@@ -454,7 +454,7 @@ header {
 /* Footer Section */
 
 .footercontainer {
-    color: #B2FFA9;
+    color: #fde64e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,32 +476,34 @@ header {
 .footercontainer .footerflexrow li a {
     font-size: 20px;
     font-weight: 500;
-    color: #B2FFA9;
+    color: #fde64e;
 }
 
 .footercontainer .footerflexrow li i {
-    color: #B2FFA9;
+    color: #fde64e;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    border: 1px solid #B2FFA9;
+    border: 2px solid #fde64e;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .footercontainer .footerflexrow li i:hover {
-    color: #0D1B1E;
-    transition: 1s ease;
+    color: #2C4219;
+    transition: 1s ease-in-out;
     transform: rotate(360deg);
-    background-color: #B2FFA9;
+    background-color: #fde64e;
 }
 
 .footercontainer p {
     text-align: center;
-    background-color: #B2FFA9;
-    color: #0D1B1E;
+    background-color: #fde64e;
+    color: #2C4219;
+    font-weight: 700;
     width: 100%;
     padding: 20px 0;
 }
