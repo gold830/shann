@@ -13,7 +13,7 @@
 
 body {
     background-color: #2C4219;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -146,102 +146,6 @@ header {
 
 /* Nav Bar */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Video Cards Section */
-
-.youtubesection {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    flex-direction: column;
-}
-
-.youtubesection h2 {
-    font-size: 25px;
-    font-family: "Lobster Two", sans-serif;
-    color: #fde64e;
-    margin-bottom: 30px;
-}
-
-.youtubesection h2::after {
-    content: "";
-    height: 5px;
-    width: 50px;
-    background-color: #fde64e;
-    border-radius: 25px;
-    display: block;
-    margin: auto;
-}
-
-.youtubesection .youtubecardcontainers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.youtubesection .youtubecardcontainers .youtubecard {
-    width: 325px;
-    height: 280px;
-    background: #fde64e;
-    border: 3px solid #fde64e;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px #000000;
-    overflow: hidden;
-    text-align: center;
-    color: #2C4219;
-}
-
-.youtubesection .youtubecardcontainers .youtubecard .cardcontent h1 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-
-.youtubesection .youtubecardcontainers .youtubecard .cardcontent span {
-    font-weight: 800;
-}
-
-/* Video Cards Section */
 
 
 
