@@ -160,6 +160,98 @@ header {
 
 
 
+/* Shows 1 Section */
+
+.sectioncontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+.sectioncard {
+    width: 350px;
+    background-color: #fde64e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.329);
+    margin: 20px;
+}
+
+.sectioncard img {
+    width: 90%;
+    height: auto;
+    margin: 5% 5% 5% 5%;
+}
+
+.sectioncard .sectioncontentcard {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sectioncard .sectioncontentcard h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sectioncard .sectioncontentcard p {
+    font-size: 14px;
+}
+
+#check,
+#check1,
+#check2 {
+    display: none;
+}
+
+.sectioncard .sectioncontentcard .sectioncontent {
+    display: none;
+}
+
+.sectioncard .sectioncontentcard label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fde64e;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #2C4219;
+    border-radius: 50px;
+    border: 1px solid #2C4219;
+    transition: .3s ease-in-out;
+}
+
+.sectioncard .sectioncontentcard label:hover {
+    background-color: #fde64e;
+    color: #2C4219;
+}
+
+#check:checked ~ .sectioncontent {
+    display: block;
+}
+
+#check1:checked ~ .sectioncontent {
+    display: block;
+}
+
+#check2:checked ~ .sectioncontent {
+    display: block;
+}
+
+
+
+/* Shows 1 Section */
+
+
+
+
+
+
 
 
 
@@ -179,6 +271,7 @@ header {
 
 .showscontainer {
     margin-top: 100px;
+    display: none;
 }
 
 .showscontainer .groups {
