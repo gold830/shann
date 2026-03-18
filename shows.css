@@ -202,7 +202,8 @@ header {
 
 #check,
 #check1,
-#check2 {
+#check2,
+#check3 {
     display: none;
 }
 
@@ -252,6 +253,14 @@ header {
 }
 
 #check2:checked ~ .label {
+    display: none;
+}
+
+#check3:checked ~ .sectioncontent {
+    display: block;
+}
+
+#check3:checked ~ .label {
     display: none;
 }
 
