@@ -235,12 +235,24 @@ header {
     display: block;
 }
 
+#check:checked ~ .label {
+    display: none;
+}
+
 #check1:checked ~ .sectioncontent {
     display: block;
 }
 
+#check1:checked ~ .label {
+    display: none;
+}
+
 #check2:checked ~ .sectioncontent {
     display: block;
+}
+
+#check2:checked ~ .label {
+    display: none;
 }
 
 
