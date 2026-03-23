@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #2C4219;
+    background-color: black;
 }
 
 
@@ -35,7 +35,8 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #2C4219;
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,7 +116,8 @@ header {
         right: 0;
         right: 0;
         width: 100vw;
-        background-color: #2C4219;
+        background-color: black;
+        border-bottom: 2px solid white;
         transition: 0.2s;
         overflow: hidden;
         z-index: 999;
@@ -237,7 +239,7 @@ form{
     font-size: .9rem;
     padding: 1em;
     outline: none;
-    background-color: #233414;
+    background-color: #2e2e2e;
     color: #fde64e;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -245,7 +247,7 @@ form{
 }
 
 .input:focus{
-    border: 1px solid #fde64e;
+    border: 1px solid white;
 }
 
 .input::placeholder{
@@ -253,18 +255,18 @@ form{
 }
 
 .submit{
-    background-color: #2C4219;
+    background-color: black;
     border: none;
     color: #fde64e;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    border: 1px solid #fde64e;
+    border: 1px solid white;
     border-radius: 25px;
 }
 
 .submit:hover {
-    background-color: #fde64e;
+    background-color: white;
     color: #2C4219;
 }
 
@@ -290,7 +292,7 @@ form{
     left: 0;
     width: 90%;
     height: 90%;
-    border: 2px solid #fde64e;
+    border: 2px solid white;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -323,10 +325,12 @@ form{
 
 .para3 {
     font-size: 16px;
+    color: white;
 }
 
 .sub-heading3 {
     font-size: 20px;
+    color: white;
 }
 
 
@@ -361,7 +365,7 @@ ul{
 }
 
 .footer{
-	background-color: pink;
+	background-color: black;
     padding: 70px 0;
 }
 
@@ -706,14 +710,14 @@ ul{
 }
 
 .footercontainer .footerflexrow li i {
-    color: #fde64e;
+    color: white;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    border: 2px solid #fde64e;
+    border: 2px solid white;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -722,13 +726,13 @@ ul{
     color: #2C4219;
     transition: 1s ease-in-out;
     transform: rotate(360deg);
-    background-color: #fde64e;
+    background-color: white;
 }
 
 .footercontainer p {
     text-align: center;
-    background-color: #fde64e;
-    color: #2C4219;
+    background-color: white;
+    color: black;
     font-weight: 700;
     width: 100%;
     padding: 20px 0;

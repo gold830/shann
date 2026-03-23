@@ -12,8 +12,7 @@
 }
 
 body {
-    background-color: #2C4219;
-    width: 100vw;
+    background-color: black;
 }
 
 
@@ -36,7 +35,8 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #2C4219;
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,7 +116,8 @@ header {
         right: 0;
         right: 0;
         width: 100vw;
-        background-color: #2C4219;
+        background-color: black;
+        border-bottom: 2px solid white;
         transition: 0.2s;
         overflow: hidden;
         z-index: 999;
@@ -217,14 +218,14 @@ header {
 }
 
 .footercontainer .footerflexrow li i {
-    color: #fde64e;
+    color: white;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    border: 2px solid #fde64e;
+    border: 2px solid white;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -233,13 +234,13 @@ header {
     color: #2C4219;
     transition: 1s ease-in-out;
     transform: rotate(360deg);
-    background-color: #fde64e;
+    background-color: white;
 }
 
 .footercontainer p {
     text-align: center;
-    background-color: #fde64e;
-    color: #2C4219;
+    background-color: white;
+    color: black;
     font-weight: 700;
     width: 100%;
     padding: 20px 0;
