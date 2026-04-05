@@ -12,7 +12,18 @@
 }
 
 body {
-    background-color: black;
+    width: 100%;
+    background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
+    
+    
+    /* 2. Set the background to fixed */
+    background-attachment: fixed; /* This is the key property */
+    
+    /* 3. Optional: other useful properties for a full-page background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image in the container */
+    
 }
 
 
@@ -49,7 +60,7 @@ header {
 .navlogo h1 {
     font: 16px;
     font-weight: 900;
-    color: #fde64e;
+    color: white;
 }
 
 .hamburger {
@@ -62,8 +73,8 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: white;
+    border: 1px solid white;
     font-size: 16px;
     font-weight: 700;
     padding: 5px 25px;
@@ -73,15 +84,15 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: black;
+    background-color: red;
+    border: 1px solid red;
 }
 
 .navbar ul li .active {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: red;
+    background-color: black;
+    border: 1px solid red;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -105,7 +116,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #fde64e;
+        background-color: white;
         margin: 6px 0;
     }
 
@@ -173,8 +184,8 @@ header {
 
 .sectioncard {
     width: 350px;
-    background-color: #000000;
-    border: 1px solid #fde64e;
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.329);
@@ -186,7 +197,7 @@ header {
     height: auto;
     overflow: hidden;
     border-radius: 9px;
-    border: 1px solid #fde64e;
+    border: 1px solid white;
     margin-bottom: 10px;
 }
 
@@ -229,7 +240,7 @@ header {
     font-size: 14px;
     cursor: pointer;
     padding: 5px 20px;
-    background-color: black;
+    background-color: transparent;
     border-radius: 50px;
     border: 1px solid #fde64e;
     transition: .3s ease-in-out;
@@ -598,7 +609,7 @@ header {
 .footercontainer .footerflexrow li a {
     font-size: 20px;
     font-weight: 500;
-    color: #fde64e;
+    color: white;
 }
 
 .footercontainer .footerflexrow li i {

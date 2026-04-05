@@ -12,7 +12,18 @@
 }
 
 body {
-    background-color: black;
+    width: 100%;
+    background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
+    
+    
+    /* 2. Set the background to fixed */
+    background-attachment: fixed; /* This is the key property */
+    
+    /* 3. Optional: other useful properties for a full-page background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image in the container */
+    
 }
 
 
@@ -49,7 +60,7 @@ header {
 .navlogo h1 {
     font: 16px;
     font-weight: 900;
-    color: #fde64e;
+    color: white;
 }
 
 .hamburger {
@@ -62,8 +73,8 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: white;
+    border: 1px solid white;
     font-size: 16px;
     font-weight: 700;
     padding: 5px 25px;
@@ -73,15 +84,15 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: black;
+    background-color: red;
+    border: 1px solid red;
 }
 
 .navbar ul li .active {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: red;
+    background-color: black;
+    border: 1px solid red;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -105,7 +116,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #fde64e;
+        background-color: white;
         margin: 6px 0;
     }
 
@@ -210,7 +221,7 @@ header {
 .hero .herocontent h1 {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #fde64e;
+    color: red;
     display: none;
 
 }
@@ -219,7 +230,7 @@ header {
     font-size: 20px;
     margin-top: 100px;
     margin-bottom: 5px;
-    color: #fde64e;
+    color: red;
     letter-spacing: 4px;
 }
 
@@ -276,6 +287,20 @@ header {
 
 .aboutsection {
     width: 100%;
+    background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
+    
+    
+    /* 2. Set the background to fixed */
+    background-attachment: fixed; /* This is the key property */
+    
+    /* 3. Optional: other useful properties for a full-page background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image in the container */
+    
+    /* Ensure the body takes up at least the full viewport height */
+    min-height: 100vh; 
+    margin: 0;
 }
 
 .aboutsection .aboutcontainer {
@@ -294,14 +319,14 @@ header {
 .aboutsection .aboutcontainer .title h1 {
     font-size: 25px;
     font-family: "Lobster Two", sans-serif;
-    color: #fde64e;
+    color: red;
 }
 
 .aboutsection .aboutcontainer .title h1::after {
     content: "";
     height: 5px;
     width: 50px;
-    background-color: #fde64e;
+    background-color: red;
     border-radius: 25px;
     display: block;
     margin: auto;
@@ -326,7 +351,7 @@ header {
 .aboutsection .aboutcontainer .imagesection img {
     width: 100%;
     height: auto;
-    border: 2px solid #fde64e;
+    border: 2px solid #ffffff;
     border-radius: 25px;
 }
 
@@ -339,8 +364,8 @@ header {
     padding: 8px 25px;
     background: black;
     border-radius: 40px;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -348,7 +373,7 @@ header {
 }
 
 .aboutsection .aboutcontainer .content .article .button a:hover {
-    background-color: #fde64e;
+    background-color: #ffffff;
     color: black;
 }
 
@@ -438,20 +463,6 @@ header {
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
-    
-    
-    /* 2. Set the background to fixed */
-    background-attachment: fixed; /* This is the key property */
-    
-    /* 3. Optional: other useful properties for a full-page background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-size: cover;      /* Scales the image to cover the entire container */
-    background-position: center; /* Centers the image in the container */
-    
-    /* Ensure the body takes up at least the full viewport height */
-    min-height: 100vh; 
-    margin: 0;
 }
 
 .career .card {
@@ -463,7 +474,7 @@ header {
     margin-top: 30px;
     margin-bottom: 30px;
     background: linear-gradient(rgba(0, 0, 0, 0.235),rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.249));
-    border: 1px solid #fde64e;
+    border: 0.2px solid white;
 }
 
 .career .card h3 {
@@ -487,8 +498,8 @@ header {
     padding: 8px 25px;
     background: transparent;
     border-radius: 40px;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -497,7 +508,7 @@ header {
 }
 
 .career .card button:hover {
-    background-color: #fde64e;
+    background-color: white;
     color: black;
 }
 
@@ -533,8 +544,9 @@ header {
 
 .services {
     width: 90%;
-    background: linear-gradient(rgba(0, 0, 0, 0.235),rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.249));
-    border: 1px solid #fde64e;
+    min-height: 100vh; 
+    margin: 0;
+    border: 1px solid #ffffff;
     border-radius: 25px;
     padding: 30px 20px;
     margin-left: 5%;
@@ -570,7 +582,7 @@ header {
 .services .boxcontainer .box {
     padding: 10px;
     border-radius: 10px;
-    background-color: black;
+    background-color: transparent;
     border: 1px solid white;
     text-align: center;
 }
@@ -582,7 +594,7 @@ header {
 .services .boxcontainer .box .boxicon span {
     margin: 10px 0;
     font-size: 35px;
-    color: #fde64e;
+    color: white;
 }
 
 .services .boxcontainer .box .title {
@@ -599,10 +611,10 @@ header {
 .services .boxcontainer .box a {
     text-decoration: none;
     padding: 8px 25px;
-    background: black;
+    background: transparent;
     border-radius: 40px;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -666,7 +678,7 @@ header {
 .footercontainer .footerflexrow li a {
     font-size: 20px;
     font-weight: 500;
-    color: #fde64e;
+    color: white;
 }
 
 .footercontainer .footerflexrow li i {

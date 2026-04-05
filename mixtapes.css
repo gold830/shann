@@ -12,7 +12,18 @@
 }
 
 body {
-    background-color: black;
+    width: 100%;
+    background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
+    
+    
+    /* 2. Set the background to fixed */
+    background-attachment: fixed; /* This is the key property */
+    
+    /* 3. Optional: other useful properties for a full-page background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image in the container */
+    
 }
 
 
@@ -49,7 +60,7 @@ header {
 .navlogo h1 {
     font: 16px;
     font-weight: 900;
-    color: #fde64e;
+    color: white;
 }
 
 .hamburger {
@@ -62,8 +73,8 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #fde64e;
-    border: 1px solid #fde64e;
+    color: white;
+    border: 1px solid white;
     font-size: 16px;
     font-weight: 700;
     padding: 5px 25px;
@@ -73,15 +84,15 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: black;
+    background-color: red;
+    border: 1px solid red;
 }
 
 .navbar ul li .active {
-    color: #2C4219;
-    background-color: #fde64e;
-    border: 1px solid #fde64e;
+    color: red;
+    background-color: black;
+    border: 1px solid red;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -105,7 +116,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #fde64e;
+        background-color: white;
         margin: 6px 0;
     }
 
@@ -199,7 +210,7 @@ header {
 .youtubesection h2 {
     font-size: 25px;
     font-family: "Lobster Two", sans-serif;
-    color: #fde64e;
+    color: red;
     margin-bottom: 30px;
 }
 
@@ -207,7 +218,7 @@ header {
     content: "";
     height: 5px;
     width: 50px;
-    background-color: #fde64e;
+    background-color: red;
     border-radius: 25px;
     display: block;
     margin: auto;
@@ -223,8 +234,8 @@ header {
 .youtubesection .youtubecardcontainers .youtubecard {
     width: 325px;
     height: 280px;
-    background: #fde64e;
-    border: 1px solid #fde64e;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 2px 4px #000000;
     overflow: hidden;
@@ -236,10 +247,16 @@ header {
     font-size: 20px;
     margin-bottom: 15px;
     margin-top: 10px;
+    color: white;
+}
+
+.youtubesection .youtubecardcontainers .youtubecard .cardcontent p {
+    color: white;
 }
 
 .youtubesection .youtubecardcontainers .youtubecard .cardcontent span {
     font-weight: 800;
+    color: red;
 }
 
 /* Video Cards Section */
@@ -310,7 +327,7 @@ header {
 .footercontainer .footerflexrow li a {
     font-size: 20px;
     font-weight: 500;
-    color: #fde64e;
+    color: white;
 }
 
 .footercontainer .footerflexrow li i {
