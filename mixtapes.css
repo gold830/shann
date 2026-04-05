@@ -14,16 +14,11 @@
 body {
     width: 100%;
     background-image: linear-gradient(#000000b5, #000000b5), url(pics/Background.jpeg); /* Specify the path to your image */
-    
-    
-    /* 2. Set the background to fixed */
-    background-attachment: fixed; /* This is the key property */
-    
-    /* 3. Optional: other useful properties for a full-page background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-size: cover;      /* Scales the image to cover the entire container */
-    background-position: center; /* Centers the image in the container */
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 100%;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 
